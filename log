@@ -351,3 +351,14 @@ exercises.c:76:31: error: ‘capacidad’ undeclared (first use in this function
 exercises.c:76:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 9d54da9
+Fri 10 Mar 2023 05:51:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:76:34: error: ‘vec’ is used uninitialized [-Werror=uninitialized]
+   76 |   vec->datos = (int *) calloc(vec->capacidad,sizeof(int));
+      |                               ~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e28188b
