@@ -329,3 +329,14 @@ exercises.c:76:14: error: ‘vec’ is used uninitialized [-Werror=uninitialized
 cc1: all warnings being treated as errors
 Compilation failed
 b93114c
+Fri 10 Mar 2023 05:51:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:76:14: error: ‘vec’ is used uninitialized [-Werror=uninitialized]
+   76 |   vec->datos = (int *) calloc(n,sizeof(int));
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6c78f59
