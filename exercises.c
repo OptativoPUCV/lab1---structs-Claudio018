@@ -71,10 +71,13 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
-   Vector *arr = NULL;
-   arr = (Vector *) calloc(n,sizeof(Vector));
-   return arr;
+Vector * crearVector(int n) { 
+  Vector vec = calloc(n, sizeof(Vector));
+   for (int k = 0; k < n ; k++)
+   {
+       vec[k]->datos = (vec[k]->capacidad,sizeof(int));
+   }
+  return vec;
 }
 
 /*
@@ -84,7 +87,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
   v[i] = valor;
-  
+
 }
 
 /*
