@@ -75,7 +75,7 @@ Vector * crearVector(int n) {
   Vector vec = calloc(n, sizeof(Vector));
    for (int k = 0; k < n ; k++)
    {
-       vec[k]->datos = (vec[k]->capacidad,sizeof(int));
+       vec[k]->datos = calloc(vec[k]->capacidad,sizeof(int));
    }
   return vec;
 }
