@@ -59,3 +59,14 @@ exercises.c:76:15: error: ‘var’ is used uninitialized [-Werror=uninitialized
 cc1: all warnings being treated as errors
 Compilation failed
 f23a169
+Fri 10 Mar 2023 12:23:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:76:15: error: ‘var’ is used uninitialized [-Werror=uninitialized]
+   76 |    var->datos = (int *) calloc(n,sizeof(int));
+      |    ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+257d05b
