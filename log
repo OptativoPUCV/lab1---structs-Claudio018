@@ -10,3 +10,17 @@ Fri 10 Mar 2023 12:15:44 PM UTC:
  tests:  3|4
 total_score: 30/70
 9c60432
+Fri 10 Mar 2023 12:18:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:76:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   76 |    return *vector;
+      |           ^~~~~~~
+exercises.c:77:1: error: control reaches end of non-void function [-Werror=return-type]
+   77 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+351d76d
