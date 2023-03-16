@@ -425,3 +425,18 @@ exercises.c:76:14: error: assignment to ‘int *’ from incompatible pointer ty
 cc1: all warnings being treated as errors
 Compilation failed
 c00b3ea
+Thu 16 Mar 2023 08:24:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:76:23: error: expected expression before ‘)’ token
+   76 |   vec->datos = (int) *) calloc(n,sizeof(int));
+      |                       ^
+exercises.c:76:23: error: expected statement before ‘)’ token
+exercises.c:76:25: error: ignoring return value of ‘calloc’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   76 |   vec->datos = (int) *) calloc(n,sizeof(int));
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+df6d3be
