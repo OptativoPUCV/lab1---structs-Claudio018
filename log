@@ -440,3 +440,9 @@ exercises.c:76:25: error: ignoring return value of ‘calloc’ declared with at
 cc1: all warnings being treated as errors
 Compilation failed
 df6d3be
+Thu 16 Mar 2023 08:24:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+054540a
